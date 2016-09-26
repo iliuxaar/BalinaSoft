@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.iliuxa.balinasoft.Controllers.MainActivity"
+    tools:showIn="@layout/app_bar_list_of_dishes"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="@string/emptyBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emptyBaseText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+            android:text="@string/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dowloadButton"
+            android:layout_gravity="center" />
+
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressDownload"
+            android:visibility="gone" />
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/container"
+            android:clickable="true">
+
+    </FrameLayout>
+
+
+</LinearLayout>
